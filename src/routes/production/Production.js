@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Production.scss';
+import cx from 'classnames';
 import Url1 from './portraits.jpg';
 import Url2 from './sculpture.jpg';
 import Url3 from './fireplaces.jpg';
@@ -72,7 +73,8 @@ class Production extends React.Component {
                 <li><a href="">Складні архітектурні вироби</a></li>
                 <li><a href="">Садово-паркове мистецтво</a></li>
               </ul>
-              <a href="" className={s.choose_link}>Каталог продукції</a>
+                {/*<button className={cx(s.buttonPrimary, s.contactUsBtn)}></button>*/}
+               <a href="" className={s.choose_link}>Каталог продукції</a>
             </li>
             {
               PRODUCTS.map(function(el) {

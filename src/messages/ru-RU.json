@@ -1,17 +1,8 @@
 [
   {
-    "id": "header.banner.desc",
-    "description": "Description in header",
-    "defaultMessage": "Complex web apps made easy",
-    "message": "",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
-  },
-  {
     "id": "header.banner.title",
     "description": "Title in page header",
-    "defaultMessage": "React",
+    "defaultMessage": "Створюємо шедeври з натурального каменю власноруч",
     "message": "",
     "files": [
       "src/components/Header/Header.js"
@@ -20,7 +11,7 @@
   {
     "id": "header.brand",
     "description": "Brand name displayed in header",
-    "defaultMessage": "Your Company Brand",
+    "defaultMessage": "Майстерня",
     "message": "",
     "files": [
       "src/components/Header/Header.js"
@@ -120,6 +111,60 @@
     "message": "",
     "files": [
       "src/components/Catalogue/Catalogue.js"
+    ]
+  },
+  {
+    "id": "gallery.about",
+    "description": "About title in home",
+    "defaultMessage": "Про нас",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "gallery.galleryTitle",
+    "description": "Catalogue title in home",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "gallery.works",
+    "description": "Our works title in home",
+    "defaultMessage": "Наші роботи",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.address",
+    "description": "Address of Majsternya location",
+    "defaultMessage": "м. Мукачево, вул. Переяславська, 1",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.contactButtonText",
+    "description": "Button for feedback",
+    "defaultMessage": "Зв’язатись з нами",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.phone",
+    "description": "Contact mobile phone",
+    "defaultMessage": "+38 066 445 59 00",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
     ]
   }
 ]

@@ -75,23 +75,63 @@ import logoUrl from './logo.png';
 import logoUrl2x  from './logo@2x.png';
 
 const messages = defineMessages({
-  brand: {
-    id: 'header.brand',
-    defaultMessage: 'Your Company Brand',
-    description: 'Brand name displayed in header',
+//   brand: {
+//     id: 'header.brand',
+//     defaultMessage: 'Your Company Brand',
+//     description: 'Brand name displayed in header',
+//   },
+//   bannerTitle: {
+//     id: 'header.banner.title',
+//     defaultMessage: 'React',
+//     description: 'Title in page header',
+//   },
+//   bannerDesc: {
+//     id: 'header.banner.desc',
+//     defaultMessage: 'Complex web apps made easy',
+//     description: 'Description in header',
+//   },
+// });
+brand: {
+  id: 'header.brand',
+  defaultMessage: 'Майстерня',
+  description: 'Brand name displayed in header',
   },
-  bannerTitle: {
-    id: 'header.banner.title',
-    defaultMessage: 'React',
-    description: 'Title in page header',
+bannerTitle: {
+  id: 'header.banner.title',
+  defaultMessage: 'Створюємо шедeври з натурального каменю власноруч ',
+  description: 'Title in page header',
   },
-  bannerDesc: {
-    id: 'header.banner.desc',
-    defaultMessage: 'Complex web apps made easy',
-    description: 'Description in header',
+phone: {
+  id: 'header.phone',
+  defaultMessage: '+38 066 445 59 00',
+  description: 'Contact mobile phone',
   },
+address: {
+  id: 'header.address',
+  defaultMessage: 'м. Мукачево, вул. Переяславська, 1',
+  description: 'Address of Majsternya location',
+  },
+contactButtonText: {
+  id: 'header.contactButtonText',
+  defaultMessage: 'Зв’язатись з нами',
+  description: 'Button for feedback',
+  },
+galleryTitle: {
+  id: 'gallery.galleryTitle',
+  defaultMessage: 'Каталог продукції',
+  description: 'Catalogue title in home',
+  },
+about: {
+  id: 'gallery.about',
+  defaultMessage: 'Про нас',
+  description: 'About title in home',
+  },
+works: {
+  id: 'gallery.works',
+  defaultMessage: 'Наші роботи',
+  description: 'Our works title in home',
+},
 });
-
 class Header extends React.Component {
   render() {
     return (
@@ -99,16 +139,16 @@ class Header extends React.Component {
         <div className={cx(s.container, s.headerContainer)}>
           <div className={s.slider}>
             <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} alt="Logo" />
-            <h1 className={s.title}>Майстерня</h1>
+            <h1 className={s.title}><FormattedMessage {...messages.brand} /></h1>
           </div>
           <div className={s.info}>
             <div className={s.left}>
-              <h2 className={s.tagline}>Створюємо шедeври <br />з натурального каменю власноруч</h2>
+              <h2 className={s.tagline}><FormattedMessage {...messages.bannerTitle} /></h2>
               <div className={s.menuHorizontal}>
                 <div className={s.language}>
                   <LanguageSwitcher />
                 </div>
-                <div className={s.contactUs}>Зв’язатись з нами</div>
+                <button className={cx(s.buttonPrimary, s.contactUsBtn)}><FormattedMessage {...messages.contactButtonText} /></button>
               </div>
             </div>
             <div className={s.right}>
@@ -116,16 +156,16 @@ class Header extends React.Component {
                 <div className={s.header}>
                   <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="48px" height="133px" alt="Logo" />
                   <div className={s.card}>
-                    <h3 className={s.title}>Майстерня</h3>
-                    <div className={s.contact}>+38 066 445 59 00</div>
-                    <div className={s.address}>м. Мукачево, вул. Переяславська, 1</div>
+                    <h3 className={s.title}><FormattedMessage {...messages.brand} /></h3>
+                    <div className={s.contact}><FormattedMessage {...messages.phone} /></div>
+                    <div className={s.address}><FormattedMessage {...messages.address}/></div>
                   </div>
                 </div>
                 <nav className={s.nav}>
                   <ul>
-                    <li><Link className={s.link} to="/">Каталог продукції</Link></li>
-                    <li><Link className={s.link} to="/">Про нас</Link></li>
-                    <li><Link className={s.link} to="/">Наші роботи</Link></li>
+                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.galleryTitle} /></Link></li>
+                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.about} /></Link></li>
+                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.works} /></Link></li>
                   </ul>
                 </nav>
               </div>

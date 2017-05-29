@@ -64,14 +64,30 @@
   margin-top: 28px;
 }
 
-.contactUs {
-  font-size: 20px;
-  font-weight: 500;
-  border: 2px solid #3C3C43;
+.buttonPrimary {
+  display: block;
   text-align: center;
-  padding: 14px 45px;
+  background-color: #fff;
+  color: #3C3C43;
+  text-decoration: none;
+  border: 2px #3C3C43 solid;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #3C3C3C;
+    color: #fff;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: background-color .8s ease;
+  }
 }
-
+.contactUsBtn{
+  
+}
 .right {
   margin-left: 23px;
   border: 2px solid #3C3C43;
@@ -105,6 +121,7 @@
 
       .address {
         margin-top: 10px;
+        white-space: nowrap;
       }
     }
   }

@@ -15,12 +15,14 @@
   --font-family-base: 'Roboto', 'Arial', sans-serif;
   --main-text-color: #3C3C43;
 
+
   /*
    * Layout
    * ======================================================================== */
 
   --max-content-width: 1379px;
-
+  
+  
   /*
    * Media queries breakpoints
    * ======================================================================== */
