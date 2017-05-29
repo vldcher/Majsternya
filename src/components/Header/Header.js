@@ -11,6 +11,7 @@ import React from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
+import cx from 'classnames';
 import Link from '../Link';
 import Navigation from '../Navigation';
 // import Button from '../Button';
@@ -74,7 +75,7 @@ return (
 					<div className={s.local} >
 						<LanguageSwitcher />
 					</div>
-					<button className={s.button_primary} type="button"><FormattedMessage {...messages.contactButtonText} /></button>
+					<button className={cx(s.button_primary, s.button_contact)} type="button"><FormattedMessage {...messages.contactButtonText} /></button>
 				</div>
 			</div>
 			<div className={s.brandMenu}>

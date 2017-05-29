@@ -55,3 +55,14 @@
 .spacer {
   color: rgba(255, 255, 255, 0.3);
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  .link,
+  .link:active,
+  .link:visited {
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+}

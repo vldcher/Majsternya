@@ -165,3 +165,76 @@
   font-size: 16px;
   color: #3C3C3C;
 }
+
+/**********************MediaQueries*****************************/
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+  .bannerTitle {
+    font-size: 50px;
+  }
+
+}
+  /**/
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  .bannerTitle {
+    font-size: 32px;
+  }
+}
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  .bannerTitle {
+    font-size: 38px;
+  }
+  .brandMenu {
+    display: none;
+  }
+  .button_primary {
+    font-size: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+  }
+
+}
+  /**/
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+  .bannerTitle {
+    font-size: 40px;
+    text-align: left;
+    line-height: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+  }
+  .logoWrapper {
+    fill: #D9D8D7;
+  }
+  
+}
+  /**/
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}
+  /**/
+
