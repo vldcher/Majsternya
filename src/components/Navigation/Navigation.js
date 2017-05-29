@@ -15,42 +15,30 @@ import s from './Navigation.css';
 import Link from '../Link';
 
 const messages = defineMessages({
-
-  // contact: {
-  //   id: 'navigation.contact',
-  //   defaultMessage: 'Contact',
-  //   description: 'Contact link in header',
-  // },
-  // login: {
-  //   id: 'navigation.login',
-  //   defaultMessage: 'Log in',
-  //   description: 'Log in link in header',
-  // },
-  // or: {
-  //   id: 'navigation.separator.or',
-  //   defaultMessage: 'or',
-  //   description: 'Last separator in list, lowercase "or"',
-  // },
-  // signup: {
-  //   id: 'navigation.signup',
-  //   defaultMessage: 'Sign up',
-  //   description: 'Sign up link in header',
-  // },
-  //My nav
-  catalogue: {
-    id: 'navigation.catalogue',
-    defaultMessage: 'Каталог продукції',
-    description: 'Production Catalogue link in header',
-  },
   about: {
     id: 'navigation.about',
-    defaultMessage: 'Про нас',
+    defaultMessage: 'About',
     description: 'About link in header',
   },
-  works: {
-    id: 'navigation.works',
-    defaultMessage: 'Наші роботи',
-    description: 'Our works link in header',
+  contact: {
+    id: 'navigation.contact',
+    defaultMessage: 'Contact',
+    description: 'Contact link in header',
+  },
+  login: {
+    id: 'navigation.login',
+    defaultMessage: 'Log in',
+    description: 'Log in link in header',
+  },
+  or: {
+    id: 'navigation.separator.or',
+    defaultMessage: 'or',
+    description: 'Last separator in list, lowercase "or"',
+  },
+  signup: {
+    id: 'navigation.signup',
+    defaultMessage: 'Sign up',
+    description: 'Sign up link in header',
   },
 });
 
@@ -58,18 +46,13 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className={s.root} role="navigation">
-        
-        <Link className={s.link} to="/catalogue">
-          <FormattedMessage {...messages.catalogue} />
-        </Link>
         <Link className={s.link} to="/about">
           <FormattedMessage {...messages.about} />
         </Link>
-        <Link className={s.link} to="works">
-          <FormattedMessage {...messages.works} />
+        <Link className={s.link} to="/contact">
+          <FormattedMessage {...messages.contact} />
         </Link>
-
-               {/*<span className={s.spacer}> | </span>
+        <span className={s.spacer}> | </span>
         <Link className={s.link} to="/login">
           <FormattedMessage {...messages.login} />
         </Link>
@@ -78,7 +61,7 @@ class Navigation extends React.Component {
         </span>
         <Link className={cx(s.link, s.highlight)} to="/register">
           <FormattedMessage {...messages.signup} />
-        </Link>*/} 
+        </Link>
       </div>
     );
   }

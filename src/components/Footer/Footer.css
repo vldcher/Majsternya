@@ -10,8 +10,81 @@
 @import '../variables.css';
 
 .root {
-  background: #333;
+  color: #3c3c3c;
+}
+
+.title{
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #4f4f4f;
+}
+
+.titleH3{
+  composes: title;
+  font-size: 36px;
+
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+  color: #4f4f4f;
+  padding: 15px 20px;
+  height: 58px;
+  width: 500px;
+  border: 2px solid #3c3c43;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.OpenAnswer{
+  composes: input;
+  height: 100px;
+  resize: none;
+}
+
+.input::placeholder{
+  font-weight: bold;
+}
+
+.btn{
+  background-color: #3c3c3c;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
   color: #fff;
+  padding: 11px;
+  border: none;
+  margin: 15px 0;
+  border-radius: 2px;
+}
+
+.info{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact{   
+  margin: 140px auto 65px;
+  display: flex;
+  width: 1100px;
+}
+
+.contactNom{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contactAdress{
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -22,26 +95,26 @@
 }
 
 .text {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.spacer {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.text,
-.link {
-  padding: 2px 5px;
-  font-size: 1em;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 40px;
 }
 
 .link,
 .link:active,
 .link:visited {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
+    color: #3c3c43;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    font-weight: 500;
+    font-size: 20px;
+  }
 
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+}
+
+*{
+  box-sizing: border-box;
 }
