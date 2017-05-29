@@ -1,0 +1,195 @@
+[
+  {
+    "id": "header.banner.title",
+    "description": "Title in page header",
+    "defaultMessage": "Створюємо шедeври з натурального каменю власноруч",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.brand",
+    "description": "Brand name displayed in header",
+    "defaultMessage": "Майстерня",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "navigation.about",
+    "description": "About link in header",
+    "defaultMessage": "Про нас",
+    "message": "",
+    "files": [
+      "src/components/Button/Button.js",
+      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
+      "src/components/Navigation/Navigation.js"
+    ]
+  },
+  {
+    "id": "navigation.contact",
+    "description": "Contact link in header",
+    "defaultMessage": "Contact",
+    "message": "",
+    "files": [
+      "src/components/Button/Button.js"
+    ]
+  },
+  {
+    "id": "navigation.login",
+    "description": "Log in link in header",
+    "defaultMessage": "Log in",
+    "message": "",
+    "files": [
+      "src/components/Button/Button.js"
+    ]
+  },
+  {
+    "id": "navigation.separator.or",
+    "description": "Last separator in list, lowercase \"or\"",
+    "defaultMessage": "or",
+    "message": "",
+    "files": [
+      "src/components/Button/Button.js"
+    ]
+  },
+  {
+    "id": "navigation.signup",
+    "description": "Sign up link in header",
+    "defaultMessage": "Sign up",
+    "message": "",
+    "files": [
+      "src/components/Button/Button.js"
+    ]
+  },
+  {
+    "id": "header.address",
+    "description": "Address of Majsternya location",
+    "defaultMessage": "м. Мукачево, вул. Переяславська, 1",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.contactButtonText",
+    "description": "Button for feedback",
+    "defaultMessage": "Зв’язатись з нами",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "header.phone",
+    "description": "Contact mobile phone",
+    "defaultMessage": "+38 066 445 59 00",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "navigation.catalogue",
+    "description": "Production Catalogue link in header",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
+      "src/components/Navigation/Navigation.js"
+    ]
+  },
+  {
+    "id": "navigation.works",
+    "description": "Our works link in header",
+    "defaultMessage": "Наші роботи",
+    "message": "",
+    "files": [
+      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
+      "src/components/Navigation/Navigation.js"
+    ]
+  },
+  {
+    "id": "home.about",
+    "description": "About title in home",
+    "defaultMessage": "Про нас",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "home.catalogueTitle",
+    "description": "Catalogue title in home",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "home.works",
+    "description": "Our works title in home",
+    "defaultMessage": "Краще один раз подивитись",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "catalogueNav.architecture",
+    "description": "complex architectural products",
+    "defaultMessage": "Складні архітектурні вироби",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "catalogueNav.decoration",
+    "description": "interior and exterior decoration",
+    "defaultMessage": "Внутрішнє та зовнішнє оздоблення",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "catalogueNav.gardenDesign",
+    "description": "garden design",
+    "defaultMessage": "Садово-паркове мистецтво",
+    "message": "",
+    "files": [
+      "src/routes/home/Home.js"
+    ]
+  },
+  {
+    "id": "catalogue.about",
+    "description": "About title in home",
+    "defaultMessage": "Про нас",
+    "message": "",
+    "files": [
+      "src/components/Catalogue/Catalogue.js"
+    ]
+  },
+  {
+    "id": "catalogue.catalogueTitle",
+    "description": "Catalogue title in home",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/components/Catalogue/Catalogue.js"
+    ]
+  },
+  {
+    "id": "catalogue.works",
+    "description": "Our works title in home",
+    "defaultMessage": "Краще один раз подивитись",
+    "message": "",
+    "files": [
+      "src/components/Catalogue/Catalogue.js"
+    ]
+  }
+]

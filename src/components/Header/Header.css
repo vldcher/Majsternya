@@ -1,0 +1,167 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+:root {
+  --brand-color: #4F4F4F;
+}
+
+.root {
+  background: #fff;
+  color: #4F4F4F;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: var(--max-content-width);
+}
+
+.brand {
+  text-decoration: none;
+
+
+}
+
+.brandTxt {
+
+  color: var(--brand-color);
+  text-decoration: none;
+  font-size: 2.25em;
+  text-align: center;
+
+
+}
+
+.banner {
+  text-align: center;
+  max-width: 1339px;
+  max-height: 490px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.bannerTitle {
+
+  display: flex;
+  max-width: 882px;
+  max-height: 409px;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 1em;
+  color: #3C3C43;
+  background-color: #F9F0DD;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.bannerTitleWrapper {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bannerTitleAction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.logoImg  {
+  text-align: center;
+}
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.infoWrapper {
+
+}
+.brandMenu {
+  margin-left: 16px;
+  border: 2px solid #3C3C43;
+  padding-top: 60px;
+  padding-left: 35px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+
+}
+
+.contactInfo {
+
+  display: flex;
+}
+.smallLogoImg {
+
+}
+.phone {
+  font-size: 24px;
+  b {
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+}
+
+.navigation ul, li {
+  text-decoration: underline;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: normal;
+  color: #3C3C43;
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 35px;
+  cursor: pointer;
+
+
+  
+/*  border-bottom:2px solid #3C3C43;
+  padding-bottom:4px;*/
+}
+.navigation {
+  margin-top: 35px;
+}
+
+.button_primary {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  color: #3C3C43;
+  text-decoration: none;
+  border: 2px #3C3C43 solid;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.button_primary:hover {
+  background-color: #3C3C3C;
+  color: #fff;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: background-color .8s ease;
+
+}
+.local {
+  font-size: 16px;
+  color: #3C3C3C;
+}

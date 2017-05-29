@@ -1,0 +1,6 @@
+{
+  "name": "CatalogueNav",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CatalogueNav.js"
+}
