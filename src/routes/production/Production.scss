@@ -10,35 +10,35 @@
 @import '../../components/variables.css';
 
 .root {
-  padding-left: 20px;
-  padding-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: 850px;
+	margin: 0 auto;
+	padding: 0 0 40px;
+	max-width: 850px;
 }
 
 .products{
 	display: flex;
 	flex-wrap: wrap;
 	li{
-	    margin-bottom: 20px;
-	    margin-right: 20px;
-    }
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
 }
 
 .title{
 	font-size: 48px;
 	color: #4f4f4f;
-    margin: 35px auto 50px;
+		margin: 35px auto 50px;
 }
 
 .link{
 	composes: link from "../../components/Footer/Footer.css";
 	display: inline-block;
-
+	
 }
 
 .choose a{
@@ -47,12 +47,27 @@
 	width: 220px;
 }
 
-.choose_link{
-	padding: 10px 20px;
-    font-size: 20px;
-    color: #3c3c43;
-    border: 2px solid #3c3c43;
-    margin-top: 120px;
-    margin-left: 10px;
-    display: inline-block;
+.buttonPrimary {
+	display: block;
+	text-align: center;
+	background-color: #fff;
+	color: #3C3C43;
+	text-decoration: none;
+	border: 2px #3C3C43 solid;
+	font-size: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	&:hover {
+		background-color: #3C3C3C;
+		color: #fff;
+		border: 2px solid transparent;
+		text-decoration: none;
+		transition: background-color .8s ease;
+	}
+}
+.galleryBtn{
+	
 }

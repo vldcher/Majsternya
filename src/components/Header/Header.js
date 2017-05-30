@@ -74,6 +74,7 @@ import LanguageSwitcher from '../LanguageSwitcher';
 import logoUrl from './logo.png';
 import logoUrl2x  from './logo@2x.png';
 
+
 const messages = defineMessages({
 //   brand: {
 //     id: 'header.brand',

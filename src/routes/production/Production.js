@@ -19,7 +19,8 @@ import Url4 from './tops.jpg';
 
 
 
-var PRODUCTS = [
+
+let PRODUCTS = [
  {
     id: 1,
     name: "Портрети",
@@ -73,8 +74,8 @@ class Production extends React.Component {
                 <li><a href="">Складні архітектурні вироби</a></li>
                 <li><a href="">Садово-паркове мистецтво</a></li>
               </ul>
-                {/*<button className={cx(s.buttonPrimary, s.contactUsBtn)}></button>*/}
-               <a href="" className={s.choose_link}>Каталог продукції</a>
+                <button className={cx(s.buttonPrimary, s.galleryBtn)}>Каталог продукції</button>
+             {/*  <a href="" className={s.choose_link}>Каталог продукції</a>*/}
             </li>
             {
               PRODUCTS.map(function(el) {

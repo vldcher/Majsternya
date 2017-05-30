@@ -86,7 +86,7 @@
   }
 }
 .contactUsBtn{
-  
+
 }
 .right {
   margin-left: 23px;
@@ -96,8 +96,6 @@
 }
 
 .menuVertical {
-  // display: flex;
-  // flex-direction: column;
 
   .header {
     display: flex;
@@ -138,11 +136,10 @@
     font-weight: 500;
   }
 
-.link:hover {
-  transition: all 0.8s ease-in-out;
-  //border-color: $maincolor-text - #111;
+.link{
+  composes: link from "../../components/Footer/Footer.css";
+  
 }
-
 .nav {
   margin-top: 51px;
 }
@@ -161,4 +158,24 @@
   font-weight: normal;
   font-size: 4em;
   line-height: 1em;
+}
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  .tagline {
+    font-weight: 700;
+    font-size: 44px;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
 }
