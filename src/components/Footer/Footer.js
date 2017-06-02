@@ -31,7 +31,12 @@ class Footer extends React.Component {
             </form>
           </div>
           <div className={s.contact}>
+<<<<<<< HEAD
             <img src={mapUrl} width="660" height="320" alt="Map" />
+=======
+           {/*            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4451.512134150768!2d22.71654395910133!3d48.43954782492333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ac78bafa8c3f%3A0x2da00d5a792c2aa!2z0JzRg9C60LDRh9C10LLQviwg0JfQsNC60LDRgNC_0LDRgtGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1496349245972" width="660" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+*/} <img src={mapUrl} width="660" height="320" alt="Map" />
+>>>>>>> refs/remotes/origin/master
             <div className={s.info}>
               <h3 className={s.titleH3}>Контакти</h3>
               <p className={s.contactNom}>+38 066 445 59 00</p>

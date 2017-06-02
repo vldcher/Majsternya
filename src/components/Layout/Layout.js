@@ -17,6 +17,10 @@ import reset from '../../assets/styles/reset.css';
 import s from './Layout.css';
 import Header from '../Header';
 import Footer from '../Footer';
+<<<<<<< HEAD
+=======
+import aboutUs from '../../routes/aboutUs';
+>>>>>>> refs/remotes/origin/master
 
 class Layout extends React.Component {
   static propTypes = {
@@ -27,7 +31,13 @@ class Layout extends React.Component {
     return (
       <div>
         <Header />
+
         {this.props.children}
+<<<<<<< HEAD
+=======
+        
+        <aboutUs />
+>>>>>>> refs/remotes/origin/master
         <Footer />
       </div>
     );

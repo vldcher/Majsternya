@@ -24,8 +24,16 @@ export default {
     // require('./privacy').default,
 
     // require('./admin').default,
+<<<<<<< HEAD
     require('./production').default,
 
+=======
+    require('./contact').default,
+    // require('./catalogue').default,
+
+    require('./production').default,
+      
+>>>>>>> refs/remotes/origin/master
     require('./aboutUs').default,
 
     require('./gallery').default,

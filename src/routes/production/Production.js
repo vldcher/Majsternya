@@ -70,11 +70,19 @@ class Production extends React.Component {
           <ul className={s.products}>
             <li className={s.catalog}>
               <ul className={s.choose}>
+<<<<<<< HEAD
                 <li><a href="">Внутрішнє та зовнішнє оздоблення</a></li>
                 <li><a href="">Складні архітектурні вироби</a></li>
                 <li><a href="">Садово-паркове мистецтво</a></li>
               </ul>
                 <button className={cx(s.buttonPrimary, s.galleryBtn)}>Каталог продукції</button>
+=======
+                <li><a className={s.active} href="">Внутрішнє та зовнішнє оздоблення</a></li>
+                <li><a href="">Складні архітектурні вироби</a></li>
+                <li><a href="">Садово-паркове мистецтво</a></li>
+              </ul>
+                <a href="./aboutUs" className={cx(s.buttonPrimary, s.galleryBtn)}>Каталог продукції</a>
+>>>>>>> refs/remotes/origin/master
              {/*  <a href="" className={s.choose_link}>Каталог продукції</a>*/}
             </li>
             {

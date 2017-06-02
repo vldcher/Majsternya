@@ -20,7 +20,11 @@
   {
     "id": "navigation.about",
     "description": "About link in header",
+<<<<<<< HEAD
     "defaultMessage": "About",
+=======
+    "defaultMessage": "Про нас",
+>>>>>>> refs/remotes/origin/master
     "message": "",
     "files": [
       "src/components/Button/Button.js",
@@ -34,8 +38,12 @@
     "defaultMessage": "Contact",
     "message": "",
     "files": [
+<<<<<<< HEAD
       "src/components/Button/Button.js",
       "src/components/Navigation/Navigation.js"
+=======
+      "src/components/Button/Button.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   {
@@ -44,8 +52,12 @@
     "defaultMessage": "Log in",
     "message": "",
     "files": [
+<<<<<<< HEAD
       "src/components/Button/Button.js",
       "src/components/Navigation/Navigation.js"
+=======
+      "src/components/Button/Button.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   {
@@ -54,8 +66,12 @@
     "defaultMessage": "or",
     "message": "",
     "files": [
+<<<<<<< HEAD
       "src/components/Button/Button.js",
       "src/components/Navigation/Navigation.js"
+=======
+      "src/components/Button/Button.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   {
@@ -64,8 +80,12 @@
     "defaultMessage": "Sign up",
     "message": "",
     "files": [
+<<<<<<< HEAD
       "src/components/Button/Button.js",
       "src/components/Navigation/Navigation.js"
+=======
+      "src/components/Button/Button.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   {
@@ -83,7 +103,12 @@
     "defaultMessage": "Наші роботи",
     "message": "",
     "files": [
+<<<<<<< HEAD
       "src/components/Catalogue/CatalogueNav/CatalogueNav.js"
+=======
+      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
+      "src/components/Navigation/Navigation.js"
+>>>>>>> refs/remotes/origin/master
     ]
   },
   {
@@ -114,6 +139,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "id": "gallery.about",
     "description": "About title in home",
     "defaultMessage": "Про нас",
@@ -123,6 +149,8 @@
     ]
   },
   {
+=======
+>>>>>>> refs/remotes/origin/master
     "id": "gallery.galleryTitle",
     "description": "Catalogue title in home",
     "defaultMessage": "Каталог продукції",
@@ -166,5 +194,26 @@
     "files": [
       "src/components/Header/Header.js"
     ]
+<<<<<<< HEAD
+=======
+  },
+  {
+    "id": "gallery.aboutUs",
+    "description": "About title in home",
+    "defaultMessage": "Про нас",
+    "message": "",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
+  },
+  {
+    "id": "navigation.gallery",
+    "description": "Production Catalogue link in header",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/components/Navigation/Navigation.js"
+    ]
+>>>>>>> refs/remotes/origin/master
   }
 ]

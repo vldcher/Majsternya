@@ -15,6 +15,36 @@ import s from './Navigation.css';
 import Link from '../Link';
 
 const messages = defineMessages({
+<<<<<<< HEAD
+=======
+
+  // contact: {
+  //   id: 'navigation.contact',
+  //   defaultMessage: 'Contact',
+  //   description: 'Contact link in header',
+  // },
+  // login: {
+  //   id: 'navigation.login',
+  //   defaultMessage: 'Log in',
+  //   description: 'Log in link in header',
+  // },
+  // or: {
+  //   id: 'navigation.separator.or',
+  //   defaultMessage: 'or',
+  //   description: 'Last separator in list, lowercase "or"',
+  // },
+  // signup: {
+  //   id: 'navigation.signup',
+  //   defaultMessage: 'Sign up',
+  //   description: 'Sign up link in header',
+  // },
+  //My nav
+  gallery: {
+    id: 'navigation.gallery',
+    defaultMessage: 'Каталог продукції',
+    description: 'Production Catalogue link in header',
+  },
+>>>>>>> refs/remotes/origin/master
   about: {
     id: 'navigation.about',
     defaultMessage: 'About',
@@ -46,6 +76,13 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className={s.root} role="navigation">
+<<<<<<< HEAD
+=======
+        
+        <Link className={s.link} to="/gallery">
+          <FormattedMessage {...messages.gallery} />
+        </Link>
+>>>>>>> refs/remotes/origin/master
         <Link className={s.link} to="/about">
           <FormattedMessage {...messages.about} />
         </Link>

@@ -10,9 +10,10 @@
 /*import React from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Header.css';
+import s from './Header.scss';
 import Link from '../Link';
 import Navigation from '../Navigation';
+<<<<<<< HEAD
 import LanguageSwitcher from '../LanguageSwitcher';
 import logoUrl from './logo-small.png';
 import logoUrl2x from './logo-small@2x.png';
@@ -69,6 +70,8 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.scss';
 import Link from '../Link';
 import Navigation from '../Navigation';
+=======
+>>>>>>> refs/remotes/origin/master
 import cx from 'classnames';
 import LanguageSwitcher from '../LanguageSwitcher';
 import logoUrl from './logo.png';
@@ -76,6 +79,7 @@ import logoUrl2x  from './logo@2x.png';
 
 
 const messages = defineMessages({
+<<<<<<< HEAD
 //   brand: {
 //     id: 'header.brand',
 //     defaultMessage: 'Your Company Brand',
@@ -92,6 +96,9 @@ const messages = defineMessages({
 //     description: 'Description in header',
 //   },
 // });
+=======
+
+>>>>>>> refs/remotes/origin/master
 brand: {
   id: 'header.brand',
   defaultMessage: 'Майстерня',
@@ -122,8 +129,13 @@ galleryTitle: {
   defaultMessage: 'Каталог продукції',
   description: 'Catalogue title in home',
   },
+<<<<<<< HEAD
 about: {
   id: 'gallery.about',
+=======
+aboutUs: {
+  id: 'gallery.aboutUs',
+>>>>>>> refs/remotes/origin/master
   defaultMessage: 'Про нас',
   description: 'About title in home',
   },
@@ -164,9 +176,15 @@ class Header extends React.Component {
                 </div>
                 <nav className={s.nav}>
                   <ul>
+<<<<<<< HEAD
                     <li><Link className={s.link} to="/"><FormattedMessage {...messages.galleryTitle} /></Link></li>
                     <li><Link className={s.link} to="/"><FormattedMessage {...messages.about} /></Link></li>
                     <li><Link className={s.link} to="/"><FormattedMessage {...messages.works} /></Link></li>
+=======
+                    <li><Link className={s.link} to="/gallery"><FormattedMessage {...messages.galleryTitle} /></Link></li>
+                    <li><Link className={s.link} to="/aboutUs"><FormattedMessage {...messages.aboutUs} /></Link></li>
+                    <li><Link className={s.link} to="/works"><FormattedMessage {...messages.works} /></Link></li>
+>>>>>>> refs/remotes/origin/master
                   </ul>
                 </nav>
               </div>
