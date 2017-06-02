@@ -79,7 +79,7 @@ const config = {
       },
       {
         // Internal Styles
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         include: [
           path.resolve(__dirname, '../src'),
         ],
@@ -109,11 +109,14 @@ const config = {
               },
             },
           },
+          {
+            loader: 'sass-loader',
+          },
         ],
       },
       {
         // External Styles
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         exclude: [
           path.resolve(__dirname, '../src'),
         ],
@@ -130,6 +133,17 @@ const config = {
               minimize: !isDebug,
               discardComments: { removeAll: true },
             },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: './tools/postcss.config.js',
+              },
+            },
+          },
+          {
+            loader: 'sass-loader',
           },
         ],
       },

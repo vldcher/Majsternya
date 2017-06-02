@@ -1,0 +1,78 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 0 40px;
+	max-width: 850px;
+}
+
+.products{
+	display: flex;
+	flex-wrap: wrap;
+	li{
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+}
+
+.title{
+	font-size: 48px;
+	color: #4f4f4f;
+		margin: 35px auto 50px;
+}
+
+.link{
+	composes: link from "../../components/Footer/Footer.css";
+	display: inline-block;
+	
+}
+
+.choose a{
+	font-size: 20px;
+	color: #747880;
+	width: 220px;
+}
+a:active,
+a:hover,
+a:focus {
+	color: #3C3C3C;
+}
+
+.buttonPrimary {
+	display: block;
+	text-align: center;
+	background-color: #fff;
+	color: #3C3C43;
+	text-decoration: none;
+	border: 2px #3C3C43 solid;
+	font-size: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	&:hover {
+		background-color: #3C3C3C;
+		color: #fff;
+		border: 2px solid transparent;
+		text-decoration: none;
+		transition: background-color .8s ease;
+	}
+}
+.galleryBtn{
+	
+}

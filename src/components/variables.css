@@ -12,14 +12,17 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+  --font-family-base: 'Roboto', 'Arial', sans-serif;
+  --main-text-color: #3C3C43;
+
 
   /*
    * Layout
    * ======================================================================== */
 
-  --max-content-width: 1339px;
-
+  --max-content-width: 1379px;
+  
+  
   /*
    * Media queries breakpoints
    * ======================================================================== */
@@ -28,6 +31,4 @@
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
-
-
-  }
+}

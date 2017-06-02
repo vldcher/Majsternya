@@ -3,11 +3,14 @@
     "id": "header.banner.desc",
     "defaultMessage": "Complex web apps made easy",
     "message": "Komplexní aplikace jednodušše",
-    "description": "Description in header"
+    "description": "Description in header",
+    "files": [
+      "src/components/Header/Header.js"
+    ]
   },
   {
     "id": "header.banner.title",
-    "defaultMessage": "Створюємо шедeври з натурального каменю власноруч",
+    "defaultMessage": "React",
     "message": "React",
     "description": "Title in page header",
     "files": [
@@ -16,7 +19,7 @@
   },
   {
     "id": "header.brand",
-    "defaultMessage": "Майстерня",
+    "defaultMessage": "Your Company Brand",
     "message": "Vaše firma",
     "description": "Brand name displayed in header",
     "files": [
@@ -25,12 +28,10 @@
   },
   {
     "id": "navigation.about",
-    "defaultMessage": "Про нас",
+    "defaultMessage": "About",
     "message": "O nás",
     "description": "About link in header",
     "files": [
-      "src/components/Button/Button.js",
-      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
       "src/components/Navigation/Navigation.js"
     ]
   },
@@ -40,7 +41,7 @@
     "message": "Kontakt",
     "description": "Contact link in header",
     "files": [
-      "src/components/Button/Button.js"
+      "src/components/Navigation/Navigation.js"
     ]
   },
   {
@@ -49,7 +50,7 @@
     "message": "Přihlásit",
     "description": "Log in link in header",
     "files": [
-      "src/components/Button/Button.js"
+      "src/components/Navigation/Navigation.js"
     ]
   },
   {
@@ -58,7 +59,7 @@
     "message": "Registrace",
     "description": "Sign up link in header",
     "files": [
-      "src/components/Button/Button.js"
+      "src/components/Navigation/Navigation.js"
     ]
   },
   {
@@ -67,135 +68,7 @@
     "message": "nebo",
     "description": "Last separator in list, lowercase \"or\"",
     "files": [
-      "src/components/Button/Button.js"
-    ]
-  },
-  {
-    "id": "header.address",
-    "description": "Address of Majsternya location",
-    "defaultMessage": "м. Мукачево, вул. Переяславська, 1",
-    "message": "",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
-  },
-  {
-    "id": "header.contactButtonText",
-    "description": "Button for feedback",
-    "defaultMessage": "Зв’язатись з нами",
-    "message": "",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
-  },
-  {
-    "id": "header.phone",
-    "description": "Contact mobile phone",
-    "defaultMessage": "+38 066 445 59 00",
-    "message": "",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
-  },
-  {
-    "id": "navigation.catalogue",
-    "description": "Production Catalogue link in header",
-    "defaultMessage": "Каталог продукції",
-    "message": "",
-    "files": [
-      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
       "src/components/Navigation/Navigation.js"
-    ]
-  },
-  {
-    "id": "navigation.works",
-    "description": "Our works link in header",
-    "defaultMessage": "Наші роботи",
-    "message": "",
-    "files": [
-      "src/components/Catalogue/CatalogueNav/CatalogueNav.js",
-      "src/components/Navigation/Navigation.js"
-    ]
-  },
-  {
-    "id": "home.about",
-    "description": "About title in home",
-    "defaultMessage": "Про нас",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "home.catalogueTitle",
-    "description": "Catalogue title in home",
-    "defaultMessage": "Каталог продукції",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "home.works",
-    "description": "Our works title in home",
-    "defaultMessage": "Краще один раз подивитись",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "catalogueNav.architecture",
-    "description": "complex architectural products",
-    "defaultMessage": "Складні архітектурні вироби",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "catalogueNav.decoration",
-    "description": "interior and exterior decoration",
-    "defaultMessage": "Внутрішнє та зовнішнє оздоблення",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "catalogueNav.gardenDesign",
-    "description": "garden design",
-    "defaultMessage": "Садово-паркове мистецтво",
-    "message": "",
-    "files": [
-      "src/routes/home/Home.js"
-    ]
-  },
-  {
-    "id": "catalogue.about",
-    "description": "About title in home",
-    "defaultMessage": "Про нас",
-    "message": "",
-    "files": [
-      "src/components/Catalogue/Catalogue.js"
-    ]
-  },
-  {
-    "id": "catalogue.catalogueTitle",
-    "description": "Catalogue title in home",
-    "defaultMessage": "Каталог продукції",
-    "message": "",
-    "files": [
-      "src/components/Catalogue/Catalogue.js"
-    ]
-  },
-  {
-    "id": "catalogue.works",
-    "description": "Our works title in home",
-    "defaultMessage": "Краще один раз подивитись",
-    "message": "",
-    "files": [
-      "src/components/Catalogue/Catalogue.js"
     ]
   }
 ]

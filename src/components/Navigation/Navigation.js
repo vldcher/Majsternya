@@ -37,8 +37,8 @@ const messages = defineMessages({
   //   description: 'Sign up link in header',
   // },
   //My nav
-  catalogue: {
-    id: 'navigation.catalogue',
+  gallery: {
+    id: 'navigation.gallery',
     defaultMessage: 'Каталог продукції',
     description: 'Production Catalogue link in header',
   },
@@ -59,8 +59,8 @@ class Navigation extends React.Component {
     return (
       <div className={s.root} role="navigation">
         
-        <Link className={s.link} to="/catalogue">
-          <FormattedMessage {...messages.catalogue} />
+        <Link className={s.link} to="/gallery">
+          <FormattedMessage {...messages.gallery} />
         </Link>
         <Link className={s.link} to="/about">
           <FormattedMessage {...messages.about} />
