@@ -1,0 +1,6 @@
+{
+  "name": "CustomLangSwitcher",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CustomLangSwitcher.js"
+}

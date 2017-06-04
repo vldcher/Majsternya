@@ -30,15 +30,6 @@ time, mark, audio, video {
 
 body {
     line-height:1;
-<<<<<<< HEAD
-    width: 100vw;
-    max-width: 100%;
-    overflow-x: hidden;
-=======
-    width: 100%;
-    /*overflow-x: hidden;*/
- /*   box-sizing: border-box*/
->>>>>>> refs/remotes/origin/master
 }
 
 article,aside,details,figcaption,figure,

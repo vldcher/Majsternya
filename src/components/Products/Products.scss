@@ -1,0 +1,89 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+@import '../style.scss';
+
+.root {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container {
+		margin: 0 auto;
+		padding: 0 0 150px 25px;
+		max-width: 875px;
+}
+
+.products{
+	display: flex;
+	flex-wrap: wrap;
+	li{
+			margin-bottom: 30px;
+			margin-right: 20px;
+		}
+		img:hover {
+			transform: scale(1.05);
+			box-shadow: rgba(0,0,0,.35) 0 0 32px;
+			transition: all .5s ease;
+			cursor: pointer;
+		}
+					
+}
+
+.title{
+	font-size: 48px;
+	color: #4f4f4f;
+		margin-bottom: 45px;
+		letter-spacing: 1.25px;
+}
+
+.choose{
+	margin-right: 10px;
+		margin-bottom: 95px;
+		.active{
+			font-weight: 600;
+		}
+	a{
+		font-size: 20px;
+		color: #747880;
+		width: 220px;
+			line-height: 23px;
+	}
+		li:hover {
+			font-weight: 600;
+		}
+}
+
+.btn{
+		padding: 15px 23px;
+		// margin-top: 10px;
+}
+
+// .photoBox{
+// 	//width: 202px;
+// 	height: 295px;
+// 	overflow: hidden;
+// }
+// .photo{
+// 	//background-image: url(../img/homees-01.jpg);
+// 	width: auto;
+// 	height: 295px;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+// 	background-position: center center;
+// 	transition: all 0.8s ease-in-out;
+// 	display: block;
+
+// 	&:hover {
+// 		transform: scale(1.5);
+// 		opacity: 0.8;
+// 	}
+// }
+				

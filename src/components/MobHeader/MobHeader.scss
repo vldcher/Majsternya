@@ -1,0 +1,72 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+
+.mob_header {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+
+    &:hover {
+        transition: all 0.8s ease-in-out;
+        color: lighten(#3C3C43, 20%);
+    }
+
+    &:active {
+        transition: all 0.8s ease-in-out;
+        color: lighten(#3C3C43, 30%);
+    }
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    .line{
+      transition: all 0.8s ease-in-out;
+      background-color: lighten(#3C3C43, 20%);
+    }
+  }
+
+  &:active {
+    .line{
+      transition: all 0.8s ease-in-out;
+      background-color: lighten(#3C3C43, 30%);
+    }
+  }
+}
+
+.line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--main-text-color);
+  margin-bottom: 5px;
+  
+}
+
+@media (max-width: 768px){
+  .mob_header {
+    display: flex;
+  }
+}

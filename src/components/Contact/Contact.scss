@@ -1,0 +1,79 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+@import '../style.scss';
+
+
+
+.root {
+  color: #3c3c3c;
+}
+
+.title{
+  font-size: 48px;
+  margin-bottom: 25px;
+  color: #4f4f4f;
+  letter-spacing: 1.2px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+  color: #4f4f4f;
+  padding: 15px 20px;
+  height: 58px;
+  width: 500px;
+  border: 2px solid #3c3c43;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.OpenAnswer{
+  composes: input;
+  height: 120px;
+  resize: none;
+}
+
+.input::placeholder{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1379px;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 47px;
+  padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .title{
+    font-size: 36px;
+  }
+
+  .form{
+    *{
+      width: 90%;
+    }
+  }
+}
+
+

@@ -1,22 +1,13 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
-/*import React from 'react';
+import React from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.scss';
 import Link from '../Link';
-import Navigation from '../Navigation';
-<<<<<<< HEAD
-import LanguageSwitcher from '../LanguageSwitcher';
-import logoUrl from './logo-small.png';
-import logoUrl2x from './logo-small@2x.png';
+import MobHeader from '../MobHeader';
+import cx from 'classnames';
+import CustomLangSwitcher from '../CustomLangSwitcher';
+import logoUrl from './logo.png';
+import logoUrl2x  from './logo@2x.png';
 
 const messages = defineMessages({
   brand: {
@@ -39,129 +30,23 @@ const messages = defineMessages({
 class Header extends React.Component {
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <Navigation />
-          <Link className={s.brand} to="/">
-            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="38" height="38" alt="React" />
-            <span className={s.brandTxt}>
-              <FormattedMessage {...messages.brand} />
-            </span>
-          </Link>
-          <LanguageSwitcher />
-          <div className={s.banner}>
-            <h1 className={s.bannerTitle}>
-              <FormattedMessage {...messages.bannerTitle} />
-            </h1>
-            <FormattedMessage tagName="p" {...messages.bannerDesc} />
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default withStyles(s)(Header);*/
-
-
-import React from 'react';
-import { defineMessages, FormattedMessage } from 'react-intl';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Header.scss';
-import Link from '../Link';
-import Navigation from '../Navigation';
-=======
->>>>>>> refs/remotes/origin/master
-import cx from 'classnames';
-import LanguageSwitcher from '../LanguageSwitcher';
-import logoUrl from './logo.png';
-import logoUrl2x  from './logo@2x.png';
-
-
-const messages = defineMessages({
-<<<<<<< HEAD
-//   brand: {
-//     id: 'header.brand',
-//     defaultMessage: 'Your Company Brand',
-//     description: 'Brand name displayed in header',
-//   },
-//   bannerTitle: {
-//     id: 'header.banner.title',
-//     defaultMessage: 'React',
-//     description: 'Title in page header',
-//   },
-//   bannerDesc: {
-//     id: 'header.banner.desc',
-//     defaultMessage: 'Complex web apps made easy',
-//     description: 'Description in header',
-//   },
-// });
-=======
-
->>>>>>> refs/remotes/origin/master
-brand: {
-  id: 'header.brand',
-  defaultMessage: 'Майстерня',
-  description: 'Brand name displayed in header',
-  },
-bannerTitle: {
-  id: 'header.banner.title',
-  defaultMessage: 'Створюємо шедeври з натурального каменю власноруч ',
-  description: 'Title in page header',
-  },
-phone: {
-  id: 'header.phone',
-  defaultMessage: '+38 066 445 59 00',
-  description: 'Contact mobile phone',
-  },
-address: {
-  id: 'header.address',
-  defaultMessage: 'м. Мукачево, вул. Переяславська, 1',
-  description: 'Address of Majsternya location',
-  },
-contactButtonText: {
-  id: 'header.contactButtonText',
-  defaultMessage: 'Зв’язатись з нами',
-  description: 'Button for feedback',
-  },
-galleryTitle: {
-  id: 'gallery.galleryTitle',
-  defaultMessage: 'Каталог продукції',
-  description: 'Catalogue title in home',
-  },
-<<<<<<< HEAD
-about: {
-  id: 'gallery.about',
-=======
-aboutUs: {
-  id: 'gallery.aboutUs',
->>>>>>> refs/remotes/origin/master
-  defaultMessage: 'Про нас',
-  description: 'About title in home',
-  },
-works: {
-  id: 'gallery.works',
-  defaultMessage: 'Наші роботи',
-  description: 'Our works title in home',
-},
-});
-class Header extends React.Component {
-  render() {
-    return (
       <header className={s.root}>
-        <div className={cx(s.container, s.headerContainer)}>
-          <div className={s.slider}>
-            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} alt="Logo" />
-            <h1 className={s.title}><FormattedMessage {...messages.brand} /></h1>
+        <div className={s.container}>
+          <MobHeader />
+          <div className={s.sliderContainer}>
+            <div className={s.slider}>
+              <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} alt="Logo" />
+              <h1 className={s.title}>Майстерня</h1>
+            </div>
           </div>
-          <div className={s.info}>
+          <div className={cx(s.info, s.headerContainer)}>
             <div className={s.left}>
-              <h2 className={s.tagline}><FormattedMessage {...messages.bannerTitle} /></h2>
+              <div className={s.tagline}>
+                <h2>Створюємо шедeври з натурального каменю власноруч</h2>
+              </div>
               <div className={s.menuHorizontal}>
-                <div className={s.language}>
-                  <LanguageSwitcher />
-                </div>
-                <button className={cx(s.buttonPrimary, s.contactUsBtn)}><FormattedMessage {...messages.contactButtonText} /></button>
+                <CustomLangSwitcher />
+                <div className={s.btn}>Зв’язатись з нами</div>
               </div>
             </div>
             <div className={s.right}>
@@ -169,22 +54,16 @@ class Header extends React.Component {
                 <div className={s.header}>
                   <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="48px" height="133px" alt="Logo" />
                   <div className={s.card}>
-                    <h3 className={s.title}><FormattedMessage {...messages.brand} /></h3>
-                    <div className={s.contact}><FormattedMessage {...messages.phone} /></div>
-                    <div className={s.address}><FormattedMessage {...messages.address}/></div>
+                    <h3 className={s.title}>Майстерня</h3>
+                    <div className={s.contact}>+38 066 445 59 00</div>
+                    <div className={s.address}>м. Мукачево, вул. Переяславська, 1</div>
                   </div>
                 </div>
                 <nav className={s.nav}>
                   <ul>
-<<<<<<< HEAD
-                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.galleryTitle} /></Link></li>
-                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.about} /></Link></li>
-                    <li><Link className={s.link} to="/"><FormattedMessage {...messages.works} /></Link></li>
-=======
-                    <li><Link className={s.link} to="/gallery"><FormattedMessage {...messages.galleryTitle} /></Link></li>
-                    <li><Link className={s.link} to="/aboutUs"><FormattedMessage {...messages.aboutUs} /></Link></li>
-                    <li><Link className={s.link} to="/works"><FormattedMessage {...messages.works} /></Link></li>
->>>>>>> refs/remotes/origin/master
+                    <li><Link className={s.link} to="/catalogue">Каталог продукції</Link></li>
+                    <li><Link className={s.link} to="/aboutUs">Про нас</Link></li>
+                    <li><Link className={s.link} to="/gallery">Наші роботи</Link></li>
                   </ul>
                 </nav>
               </div>

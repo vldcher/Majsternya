@@ -1,0 +1,100 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+@import '../style.scss';
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+	margin: 0 auto 170px;
+	max-width: 1225px;
+	display: flex;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.title{
+	font-size: 48px;
+	color: #4f4f4f;
+  margin: 35px auto 50px;
+
+}
+
+.img {
+	align-self: flex-end;
+}
+
+.text{
+    font-size: 20px;
+    padding-bottom: 23px;
+    line-height: 32px;
+    //
+    // position: relative;
+    // left: 50px;
+    // opacity: 0;
+    // transition: all 1.5s ease;
+    // transition-delay: .15s;
+}
+
+.info{
+    padding-left: 40px;
+    max-width: 850px;
+    flex: 1;
+    min-width: 670px;
+}
+
+.link{
+	margin-right: 65px;
+}
+
+.menu{
+	display: flex;
+	margin-top: 7px;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 1165px) {
+	.container {
+    	flex-wrap: wrap;
+		justify-content: center;
+		.info{
+			padding-left: 0;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+  .title{
+    font-size: 36px;
+  }
+  .text{
+  	font-size: 16px;
+  }
+  .container{
+  	margin-bottom: 100px;
+  }
+  .info{
+  	min-width: 320px;
+  }
+}
+
+ @media (max-width: 480px) {
+	.container {
+    	flex-wrap: wrap;
+		justify-content: center;
+	}
+ }
+
+

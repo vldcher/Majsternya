@@ -14,15 +14,16 @@ function LanguageSwitcher({ currentLocale, availableLocales, setLocale }) {
   };
   const localeName = locale => localeDict[locale] || locale;
   return (
-    <div className="s.lang_switcher">
+    <div className={s.lang_switcher}>
       {availableLocales.map(locale => (
-        <span key={locale}>
+        <span  className={s.lang_items} key={locale}>
           {isSelected(locale) ? (
-            <span>{localeName(locale)}</span>
+            <span className={s.lang_item}>{localeName(locale)}</span>
           ) : (
             // github.com/yannickcr/eslint-plugin-react/issues/945
             // eslint-disable-next-line react/jsx-indent
             <a
+              className={s.lang_link}
               href={`?lang=${locale}`}
               onClick={(e) => {
                 setLocale({ locale });

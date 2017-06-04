@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.langItem {
+  color: #c4c4c4;
+  text-transform: uppercase;
+
+  &:first-child::after{
+      content: '/';
+      color: #c4c4c4;
+      margin: 0 6px;
+  }
+}
+
+.langLink {
+  color: var(--main-text-color);
+}
+
+@media (max-width: 480px){
+  .langSwitcher {
+    display: none;
+}
+
+ 
+}
+
+

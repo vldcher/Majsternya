@@ -16,32 +16,24 @@ import normalizeCss from 'normalize.css';
 import reset from '../../assets/styles/reset.css';
 import s from './Layout.css';
 import Header from '../Header';
+import PageHeader from '../PageHeader';
 import Footer from '../Footer';
-<<<<<<< HEAD
-=======
-import aboutUs from '../../routes/aboutUs';
->>>>>>> refs/remotes/origin/master
 
-class Layout extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-  };
-
-  render() {
-    return (
-      <div>
-        <Header />
-
-        {this.props.children}
-<<<<<<< HEAD
-=======
-        
-        <aboutUs />
->>>>>>> refs/remotes/origin/master
-        <Footer />
-      </div>
-    );
-  }
+const Layout = ({children}) => {
+  const header = children.props.type;
+  return (
+    <div>
+      {header === "home" 
+        ? <Header /> 
+        : <PageHeader />
+      }
+      {children}
+      <Footer />
+    </div>
+  );
 }
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default withStyles(reset, normalizeCss, s)(Layout);
