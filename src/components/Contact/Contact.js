@@ -21,10 +21,10 @@ class Contact extends React.Component {
             <h2 className={s.title}>Виготовимо наступний шедевр разом</h2>
             <p className={s.text}>Зв'яжіться з нами та дізнайтесь більше</p>
             <form action="" className={s.form}>
-              <input type="text" className={s.input} placeholder="Ім'я" required/>
-              <input type="text" className={s.input} placeholder="Телефон" required/>
-              <input type="text" className={s.input} placeholder="E-mail" required/>
-              <textarea type="text" className={s.OpenAnswer} placeholder="Ваша ідея або питання"/>
+              <input type="text" name="Name" className={s.input} placeholder="Ім'я" required/>
+              <input type="text" name="Phone" className={s.input} placeholder="Телефон" required/>
+              <input type="text" name="Mail" className={s.input} placeholder="E-mail" required/>
+              <textarea type="text" name="Question" className={s.OpenAnswer} placeholder="Ваша ідея або питання"/>
               <button className={s.formBtn}>Зв'язатись</button>
             </form>
           </div>

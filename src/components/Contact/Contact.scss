@@ -43,7 +43,7 @@
 .OpenAnswer{
   composes: input;
   height: 120px;
-  resize: none;
+  resize: vertical;
 }
 
 .input::placeholder{
